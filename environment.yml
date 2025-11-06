@@ -1,0 +1,10 @@
+name: twistorial-spectral
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - sympy
+  - pandas
+  - jupyter
+  - matplotlib

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Worked Example – Real-Time Spectral Action on T⁴ and S³×S¹"
+message: "If you use this notebook or its derived results, please cite the following:"
+authors:
+  - family-names: Makraini
+    given-names: Mohamed Hamed Mustafa
+    affiliation: National University of Distance Education (UNED), Madrid, Spain
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.DOI_PLACEHOLDER
+repository-code: https://github.com/KerymMacryn/twistorial-spectral-action
+license: CC-BY-4.0
+version: "1.0"
+date-released: "2025-11-04"
+keywords:
+  - spectral action
+  - noncommutative geometry
+  - heat kernel
+  - twistorial spectral quadruple
+  - mass gap

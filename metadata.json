@@ -1,0 +1,26 @@
+{
+  "title": "Worked Example: Real-Time Spectral Action on T4 and S3xS1",
+  "description": "This repository contains the reproducible Jupyter notebook and supplementary data accompanying the manuscript 'Emergent Lorentzian Spacetime and Gauge Dynamics from Twistorial Spectral Data'. It reproduces the coefficients a₀, a₂, a₄ of the real-time spectral action for the backgrounds T⁴ and S³×S¹, verifying Appendices B–D.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Mohamed Hamed Mustafa Makraini",
+      "affiliation": "UNED, Madrid"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "version": "1.0",
+  "keywords": [
+    "spectral action",
+    "noncommutative geometry",
+    "heat kernel",
+    "mass gap",
+    "twistorial spectral quadruple"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.5281/zenodo.DOI_PLACEHOLDER"
+    }
+  ]
+}
