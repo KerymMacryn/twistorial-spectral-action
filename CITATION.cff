@@ -1,20 +1,26 @@
 cff-version: 1.2.0
-title: "Worked Example – Real-Time Spectral Action on T⁴ and S³×S¹"
-message: "If you use this notebook or its derived results, please cite the following:"
+message: "If you use this repository, please cite the archived releases below."
+title: "Twistorial Spectral Action — Reproducibility Package"
+type: software
 authors:
   - family-names: Makraini
-    given-names: Mohamed Hamed Mustafa
-    affiliation: National University of Distance Education (UNED), Madrid, Spain
+    given-names: Mohamed H. M.
+    orcid: "https://orcid.org/0009-0007-6597-3283"
+repository-code: "https://github.com/KerymMacryn/twistorial-spectral-action"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.DOI_PLACEHOLDER
-repository-code: https://github.com/KerymMacryn/twistorial-spectral-action
-license: CC-BY-4.0
-version: "1.0"
-date-released: "2025-11-04"
-keywords:
-  - spectral action
-  - noncommutative geometry
-  - heat kernel
-  - twistorial spectral quadruple
-  - mass gap
+    value: 10.5281/zenodo.17542581
+  - type: doi
+    value: 10.5281/zenodo.17580885
+preferred-citation:
+  type: dataset
+  title: "Twistorial Spectral Action — Archived Releases"
+  authors:
+    - family-names: Makraini
+      given-names: Mohamed H. M.
+  repository-artifact: "Zenodo"
+  identifiers:
+    - type: doi
+      value: 10.5281/zenodo.17542581
+    - type: doi
+      value: 10.5281/zenodo.17580885
