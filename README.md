@@ -297,5 +297,35 @@ If outside tolerances, see **Common failure modes**.
 [![DOI (Sigma benchmark)](https://zenodo.org/badge/DOI/10.5281/zenodo.17580885.svg)](https://doi.org/10.5281/zenodo.17580885)
 [![DOI (Manuscript release)](https://zenodo.org/badge/DOI/10.5281/zenodo.17542581.svg)](https://doi.org/10.5281/zenodo.17542581)
 
+
+## How to cite
+
+If you use this code or the archived data, please cite the Zenodo DOIs:
+
+- Manuscript release: https://doi.org/10.5281/zenodo.17542581  
+- Σ benchmark (finite-N): https://doi.org/10.5281/zenodo.17580885
+
+**BibTeX (templates; replace with Zenodo’s auto-generated entries if you prefer):**
+```bibtex
+@dataset{makraini_2025_manuscript_release,
+  title   = {Twistorial Spectral Action — Reproducibility Package (manuscript release)},
+  author  = {Makraini, Mohamed H. M.},
+  year    = {2025},
+  publisher = {Zenodo},
+  doi     = {10.5281/zenodo.17542581},
+  url     = {https://doi.org/10.5281/zenodo.17542581}
+}
+
+@dataset{makraini_2025_sigma_benchmark,
+  title   = {Spectral-signature Σ (finite-N) benchmark},
+  author  = {Makraini, Mohamed H. M.},
+  year    = {2025},
+  publisher = {Zenodo},
+  doi     = {10.5281/zenodo.17580885},
+  url     = {https://doi.org/10.5281/zenodo.17580885}
+}
+
+
+
 ```
 ```
