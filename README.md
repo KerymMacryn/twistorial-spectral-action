@@ -1,4 +1,5 @@
 
+````markdown
 # Twistorial Spectral Action — How to reproduce
 
 This README provides **minimal, auditable steps** to regenerate the manuscript’s key figures and tables, and to run the new **spectral-signature Σ benchmark**.  
