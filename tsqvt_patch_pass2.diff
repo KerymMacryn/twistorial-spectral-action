@@ -1,0 +1,19 @@
+--- main_fixed_v3_FIXED_DOI_P6_v2_PATCHED.tex
++++ main_fixed_v3_FIXED_DOI_P6_v2_PATCHED2.tex
+@@ -675,7 +675,7 @@
+ 	\begin{proposition}[Projected flow (graviton–dilaton–gauge–Higgs)]\label{prop:beta-projection}
+ 		Projecting \cref{eq:wetterich} on a truncation
+ 		\[
+-		\Gamma_k=\!\int\!\sqrt{-g}\,(M_{P,k}^2R+A_{2,k}(\nabla\sigma)^2+A_{4,k}\,\sigma E_4\sigma-U_k(\rho))+\Gamma^{\rm YM/H}_k
++		\Gamma_k=\!\int\!\sqrt{-g}\,(M_{P,k}^2R+A_{2,k}(\nabla\sigma)^2+A_{4,k}\,\sigma E_4 (see Appendix~E)\sigma-U_k(\rho))+\Gamma^{\rm YM/H}_k
+ 		\]
+ 		yields (schematically)
+ 		\begin{gather}
+@@ -1476,6 +1476,7 @@
+ 	% ============================================================
+ 	
+ 	\section{Heat-Kernel Conventions and Sign Normalizations}
++Metric signature: (+,-,-,-).
+ For a compact list of symbols and assumptions, see Appendices J, K, and L.
+ \label{app:hk-notation}
+ 	We collect the precise heat-kernel coefficients, curvature sign conventions, and Lorentzian Wick-rotation rules used throughout the paper. These conventions match the ones employed in the long version of the manuscript.

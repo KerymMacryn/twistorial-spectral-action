@@ -1,0 +1,81 @@
+--- main_fixed_v3_FIXED_DOI_P6_v2.tex
++++ main_fixed_v3_FIXED_DOI_P6_v2_PATCHED.tex
+@@ -1475,7 +1475,9 @@
+ 	% A. Heat-Kernel Conventions and Sign Normalizations
+ 	% ============================================================
+ 	
+-	\section{Heat-Kernel Conventions and Sign Normalizations}\label{app:hk-notation}
++	\section{Heat-Kernel Conventions and Sign Normalizations}
++For a compact list of symbols and assumptions, see Appendices J, K, and L.
++\label{app:hk-notation}
+ 	We collect the precise heat-kernel coefficients, curvature sign conventions, and Lorentzian Wick-rotation rules used throughout the paper. These conventions match the ones employed in the long version of the manuscript.
+ 	\begin{itemize}
+ 		\item Metric signature: $(+,-,-,-)$; curvature tensor $R^\rho{}_{\sigma\mu\nu} = \partial_\mu \Gamma^\rho_{\nu\sigma} - \partial_\nu \Gamma^\rho_{\mu\sigma} + \cdots$.
+@@ -1494,22 +1496,26 @@
+ 	\addcontentsline{toc}{section}{Weyl Law, \texorpdfstring{$\zeta$}{Zeta}–Residue and Dixmier Trace Constant}
+ 	
+ 	\subsection{Hypotheses and conventions}
+-	
+-	Throughout this appendix we let \(E(D)\) denote the positive elliptic representative of
+-	the Lorentz/Krein operator \(D\), normalized so that its principal symbol satisfies
+-	\(p_2(x,\xi)=|\xi|_g^2\operatorname{Id}_r\) on a rank-\(r\) spinor bundle. We assume:
+-	\begin{enumerate}[label=(\roman*)]
+-		\item The resolvent \((E(D)+1)^{-1}\) is compact on \(\mathcal{H}_{\mathrm{eff}}\) (discrete spectrum with finite multiplicities).
+-		\item The eigenvalue counting function obeys the Weyl law (in \(d=4\)):
+-		\[
+-		N(\Lambda)=C_{2}\,\Lambda^{2}+o(\Lambda^{2})\quad\text{for }E(D)=D^{2}\ \text{(order 2)},\qquad
+-		N(\Lambda)=C_{4}\,\Lambda^{4}+o(\Lambda^{4})\quad\text{for }|D|\ \text{(order 1)}.
+-		\]
+-		\item The heat trace admits an asymptotic expansion as \(t\downarrow 0\):
+-		\[
+-		\Tr\!\left(e^{-tE(D)}\right)\sim a_0(E(D))\,t^{-2}+a_2(E(D))\,t^{-1}+\cdots .
+-		\]
+-	\end{enumerate}
++
++Throughout this appendix we let \(E(D)\) denote the positive elliptic representative of
++the Lorentz/Krein operator \(D\), normalized so that its principal symbol satisfies
++\(p_2(x,\xi)=|\xi|_g^2\operatorname{Id}_r\) on a rank-\(r\) spinor bundle. We assume:
++\begin{enumerate}[label=(\roman*)]
++  \item The resolvent \((E(D)+1)^{-1}\) is compact on \(\mathcal{H}_{\mathrm{eff}}\) (discrete spectrum with finite multiplicities).
++  \item The eigenvalue counting function obeys the Weyl law (in \(d=4\)):
++  \[
++    N(\Lambda)=C_{2}\,\Lambda^{2}+o(\Lambda^{2})\quad\text{for }E(D)=D^{2}\ \text{(order 2)},\qquad
++    N(\Lambda)=C_{4}\,\Lambda^{4}+o(\Lambda^{4})\quad\text{for }|D|\ \text{(order 1)}.
++  \]
++  \item The heat trace admits an asymptotic expansion as \(t\downarrow 0\):
++  \[
++    \Tr\!\left(e^{-tE(D)}\right)\sim a_0(E(D))\,t^{-2}+a_2(E(D))\,t^{-1}+\cdots .
++  \]
++\end{enumerate}
++
++These hypotheses ensure the applicability of Tauberian theorems
++(Karamata/Ikehara) and the Mellin-transform relations among \(N(\Lambda)\),
++\(\Tr(e^{-tE(D)})\), and \(\zeta_{E(D)}(s)\).\end{enumerate}
+ 	
+ 	These hypotheses ensure the applicability of Tauberian theorems
+ 	(Karamata/Ikehara) and the Mellin-transform relations among \(N(\Lambda)\),
+@@ -2319,12 +2325,9 @@
+ 	\label{app:notation-addendum}
+ 	
+ 	\paragraph{Elliptic representative vs.\ absolute value}
+-	We write \(E(D)\) for the \emph{positive elliptic representative} of the Dirac–twistor operator \(D\): it is self-adjoint, of Laplace type, with principal symbol \(|\xi|_g^2\).
+-	In Euclidean signature, \(|D|\) denotes the absolute value of the Euclidean Dirac operator.
+-	In Lorentzian statements we standardize to \(E(D)\); whenever \(|D|\) appears in a Euclidean formulation, it should be read as \(E(D)\) in real time.
+-	
+-	
+-	\paragraph{Krein structure.}
++We write \(E(D)\) for the \emph{positive elliptic representative} of the Dirac–twistor operator \(D\): it is self-adjoint, of Laplace type, with principal symbol \(|\xi|_g^2\).
++In Euclidean signature, \(|D|\) denotes the absolute value of the Euclidean Dirac operator.
++In Lorentzian statements we standardize to \(E(D)\); whenever \(|D|\) appears in a Euclidean formulation, it should be read as \(E(D)\) in real time.\paragraph{Krein structure.}
+ 	The fundamental symmetry $\beta$ defines the Krein inner product $[x,y]=\langle x,\beta y\rangle$ and implements $D^\sharp=\beta D^*\beta=D$. KO-dimension $6$ fixes the signs for $(J,\chi)$ and the Einstein–Hilbert normalization.
+ 	
+ 	\paragraph{Twistorial algebra and matter content.}
+@@ -2544,7 +2547,7 @@
+ 		
+ 		\bibitem{PenroseRindler1984} Roger Penrose, Wolfgang Rindler. Spinors and Space--Time, Volume 1: Two-Spinor Calculus and Relativistic Fields. Cambridge University Press, 1984.
+ 		
+-		\bibitem{WardWells1990} Richard S. Ward, Raymond O. Wells Jr.. Twistor Geometry and Field Theory. Cambridge University Press, 1990.
++		\bibitem{WardWells1990} Richard S. Ward, Raymond O. Wells Jr. Twistor Geometry and Field Theory. Cambridge University Press, 1990.
+ 		
+ 		\bibitem{GBVF2001} Jos\'e M. Gracia-Bondía, Joseph C. V\'arilly, H\'ector Figueroa. Elements of Noncommutative Geometry. Birkh{\"a}user, 2001.
+ 		
