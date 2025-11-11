@@ -161,4 +161,5 @@ When preparing a submission or response to reviewers include:
 - Re-run the full spectral pipeline at higher resolution (increase `--Nmax`); be prepared for longer runtimes and higher memory usage.
 - Switch tail-completion strategy via `--tail-method {local_weyl, global_fit}` to test sensitivity.
 - Export figures in vector format by adding `--format pdf` to plotting scripts.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17580885.svg)](https://doi.org/10.5281/zenodo.17580885)
 
