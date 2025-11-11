@@ -1,8 +1,10 @@
+Aquí tienes el README corregido y pulido (listo para pegar):
 
+````markdown
 # Twistorial Spectral Action — How to reproduce
 
-This README provides **minimal, auditable steps** to regenerate the manuscript’s key figures/tables and run the new **spectral-signature Σ benchmark**.  
-Use the **release/tag that matches the DOI** you intend to reproduce:
+This README provides **minimal, auditable steps** to regenerate the manuscript’s key figures and tables, and to run the new **spectral-signature Σ benchmark**.  
+Use the **GitHub release/tag that matches the DOI** you intend to reproduce:
 
 - **Manuscript release DOI:** `10.5281/zenodo.17542581`  
 - **Sigma benchmark (finite-N) DOI:** `10.5281/zenodo.17580885`
@@ -13,7 +15,7 @@ Use the **release/tag that matches the DOI** you intend to reproduce:
 
 ## Quick summary
 
-- **Main CSV regeneration:**  
+- **Main CSV regeneration:**
   ```bash
   python scripts/DataFrames.py --also-scalars
 ````
@@ -23,21 +25,25 @@ Use the **release/tag that matches the DOI** you intend to reproduce:
   ```bash
   python notebooks/figures/plot_S4_heattrace.py --Nmax 100 --R 1
   ```
+
 * **S⁴ coefficients (Table 8.1):**
 
   ```bash
   python notebooks/figures/compute_S4_coeffs.py --Nmax 100 --tmin 1e-4 --tmax 1e-2
   ```
+
 * **Twistor instanton example (Appendix H):**
 
   ```bash
   python notebooks/scripts/run_twistor_instanton.py --N 200
   ```
+
 * **Forecast pipeline (Sec. 7):**
 
   ```bash
   python notebooks/scripts/run_forecast.py --ER 1e-2 --transfer-set conservative
   ```
+
 * **NEW — Spectral-signature Σ (finite-N):**
 
   ```bash
@@ -54,7 +60,7 @@ Use the **release/tag that matches the DOI** you intend to reproduce:
 * RAM: 16–64 GB recommended for full spectral runs (smoke tests: 4–8 GB)
 * CPU: multi-core recommended; **no GPU required**
 
-**Files to check before running**
+**Files to check before running:**
 
 * `environment.yml` (conda) / `requirements.txt` (pip)
 * `scripts/CHECKSUMS.txt` (file integrity)
@@ -150,7 +156,7 @@ python notebooks/figures/compute_S4_coeffs.py --Nmax 100 --tmin 1e-4 --tmax 1e-2
 Outputs:
 
 * `notebooks/data/table_8_1.csv`
-* console summary with best-fit values and residuals
+* Console summary with best-fit values and residuals
 
 **Twistor instanton worked example (Appendix H)**
 
@@ -171,7 +177,7 @@ Outputs:
 
 * `notebooks/data/table_twistor_instanton.csv`
 * `figures/Fig_twistor_conv.png`
-  Expected: relative error vs. topological integral ≤ 1% (standard discretisation).
+  Expected: relative error vs. topological integral ≤ 1% (standard discretization).
 
 **Forecast pipeline (Sec. 7)**
 
@@ -197,7 +203,7 @@ Outputs:
 
 ## NEW: Spectral-signature Σ benchmark (finite-N)
 
-This verifies the chiral symmetry pairing under (SDS=-D), stability under (SVS=-V), and unitary covariance ([U,S]=0).
+Verifies chiral symmetry pairing under `SDS = -D`, stability under `SVS = -V`, and unitary covariance (`[U,S] = 0`).
 
 Run:
 
@@ -205,7 +211,7 @@ Run:
 python scripts/spectral_signature_sigma.py
 ```
 
-Expected (double precision, typical N): traces (\approx 0) within (\lesssim 10^{-11}); paired sums (\lesssim 10^{-12}).
+Expected (double precision, typical `N`): traces ≈ 0 within ≲ 1e−11; paired sums ≲ 1e−12.
 Outputs (also persisted with metadata):
 
 * `results/spectral_signature_sigma_*.json` / `*.csv`
@@ -242,23 +248,23 @@ Prints numeric differences and whether they are within manuscript tolerances.
 
 ---
 
-## Expected numeric tolerances (S⁴, Nmax=100, R=1)
+## Expected numeric tolerances (S⁴, Nmax = 100, R = 1)
 
-* (a_0): ±0.001  (relative error ≲ 1%)
-* (a_2): ±0.001  (relative error ≲ 1%)
-* (a_4): ±0.0003 (relative error ≲ 0.2%)
+* `a_0`: ±0.001  (relative error ≲ 1%)
+* `a_2`: ±0.001  (relative error ≲ 1%)
+* `a_4`: ±0.0003 (relative error ≲ 0.2%)
 
-If outside tolerances, see “Common failure modes”.
+If outside tolerances, see **Common failure modes**.
 
 ---
 
 ## Common failure modes and remediation
 
-* **Import/package errors:** recreate env from `environment.yml`, re-run `scripts/check_env.py`.
-* **Checksum mismatch:** re-download asset from the **matching DOI**; re-run `check_checksums.py`.
-* **Non-convergent fit / unstable plateau:** adjust `--tmin/--tmax`, try `--tail-method local_weyl` or `--tail-method global_fit`.
-* **High memory / long runtime:** use `--quick` for smoke tests or a larger CPU instance for full runs.
-* **Notebook timeout:** increase `--ExecutePreprocessor.timeout` when using nbconvert.
+* **Import/package errors:** recreate env from `environment.yml`, then re-run `scripts/check_env.py`.
+* **Checksum mismatch:** re-download the asset from the **matching DOI**; re-run `check_checksums.py`.
+* **Non-convergent fit / unstable plateau:** adjust `--tmin/--tmax`; try `--tail-method local_weyl` or `--tail-method global_fit`.
+* **High memory / long runtime:** use `--quick` for smoke tests, or use a larger CPU instance for full runs.
+* **Notebook timeout:** increase `--ExecutePreprocessor.timeout` when using `nbconvert`.
 * **Windows line endings:** repository is normalized to **LF**; Git may warn about CRLF→LF—this is harmless.
 
 ---
@@ -273,7 +279,7 @@ If outside tolerances, see “Common failure modes”.
 
 ---
 
-## Contact, DOIs and repository
+## Contact, DOIs, and repository
 
 * **Manuscript release DOI:** `10.5281/zenodo.17542581`
 * **Sigma benchmark DOI:** `10.5281/zenodo.17580885`
@@ -285,9 +291,12 @@ If outside tolerances, see “Common failure modes”.
 
 ## Advanced options
 
-* Increase resolution (e.g. `--Nmax`) for full spectral runs (higher runtime/memory).
-* Switch tail-completion via `--tail-method {local_weyl,global_fit}` to test sensitivity.
+* Increase resolution (e.g., `--Nmax`) for full spectral runs (higher runtime/memory).
+* Switch tail completion via `--tail-method {local_weyl,global_fit}` to test sensitivity.
 * Export vector figures with `--format pdf`.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17580885.svg)](https://doi.org/10.5281/zenodo.17580885)
+[![DOI (Sigma benchmark)](https://zenodo.org/badge/DOI/10.5281/zenodo.17580885.svg)](https://doi.org/10.5281/zenodo.17580885)
+[![DOI (Manuscript release)](https://zenodo.org/badge/DOI/10.5281/zenodo.17542581.svg)](https://doi.org/10.5281/zenodo.17542581)
 
+```
+```
