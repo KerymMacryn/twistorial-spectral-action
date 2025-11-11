@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-11-11T13:01:42.343461",
+  "commit": "b598ce7c9c32529a57231c0022629b88c64f417b",
+  "branch": "main",
+  "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:13:34) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.4",
+  "scipy": "1.16.3",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "N_block": 300,
+  "N": 600,
+  "seed": 2025,
+  "Lambda": 5.0,
+  "perturb_eps": 0.01,
+  "unitary_eps": 0.1,
+  "trace_fD": -1.4629616962302805e-13,
+  "trace_fD_pert": 2.6879540260260626e-14,
+  "trace_fD_U": 4.8260007101674773e-14,
+  "sum_f_eigs": -1.1368683772161603e-13,
+  "paired_max": 1.554312234475219e-14,
+  "comm_norm": 0.0
+}
